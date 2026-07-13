@@ -13,6 +13,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { GoogleOAuthProvider } from "@react-oauth/google";
+import { SpeedInsights } from "@vercel/speed-insights/react";
 import App from "./app.jsx";
 import "./theme.css";
  
@@ -22,6 +23,7 @@ ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <GoogleOAuthProvider clientId={GOOGLE_CLIENT_ID}>
       <App />
+      <SpeedInsights />
     </GoogleOAuthProvider>
   </React.StrictMode>
 );
