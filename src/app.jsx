@@ -8,6 +8,7 @@
 
 import { useState } from "react";
 import { googleLogout } from "@react-oauth/google";
+import { Analytics } from "@vercel/analytics/react";
 import AppLogo from "./applogo.jsx";
 import AppName from "./appname.jsx";
 import GoogleLoginScreen from "./googlelogin.jsx";
@@ -24,6 +25,7 @@ export default function App() {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
       <div className="grain-overlay" />
+      <Analytics />
 
       {!user ? (
         <GoogleLoginScreen onSuccess={setUser} />
