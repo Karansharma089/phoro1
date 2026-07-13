@@ -1,0 +1,22 @@
+{
+  "name": "phoro",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Phoro - a black & cyan themed photo editor with Google sign-in",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@react-oauth/google": "^0.12.1",
+    "jwt-decode": "^4.0.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.3.1",
+    "vite": "^5.4.1"
+  }
+}
